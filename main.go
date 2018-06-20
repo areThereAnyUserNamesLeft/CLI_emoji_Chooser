@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"playground/20072018/emoji"
+	"playground/20072018/CLI_emoji_Chooser/emoji"
 	"strings"
 
 	"github.com/atotto/clipboard"
