@@ -1,0 +1,5 @@
+package: playground/20072018
+import:
+- package: github.com/manifoldco/promptui
+  version: ^0.3.0
+- package: github.com/atotto/clipboard

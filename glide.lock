@@ -1,0 +1,27 @@
+hash: 8d98ecf61c2f7e35543809619b60e88a99d56c2da002b2bed97f6bc3f4ca3765
+updated: 2018-06-20T14:56:15.871812978+01:00
+imports:
+- name: github.com/atotto/clipboard
+  version: 5e2c7bddca04488284428a201e4a15615f7a5074
+- name: github.com/chzyer/readline
+  version: 2972be24d48e78746da79ba8e24e8b488c9880de
+- name: github.com/juju/ansiterm
+  version: 720a0952cc2ac777afc295d9861263e2a4cf96a1
+  subpackages:
+  - tabwriter
+- name: github.com/lunixbochs/vtclean
+  version: d14193dfc626125c831501c1c42340b4248e1f5a
+- name: github.com/manifoldco/promptui
+  version: 3dd80c00b7cb0bc779d1c204da6f3ae0fa6a4eee
+  subpackages:
+  - list
+  - screenbuf
+- name: github.com/mattn/go-colorable
+  version: efa589957cd060542a26d2dd7832fd6a6c6c3ade
+- name: github.com/mattn/go-isatty
+  version: 6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c
+- name: golang.org/x/sys
+  version: fff93fa7cd278d84afc205751523809c464168ab
+  subpackages:
+  - unix
+testImports: []
