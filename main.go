@@ -14,7 +14,9 @@ func main() {
 	// Will need expanding upon above the beginning
 	faces := emoji.MakeFaceGroup()
 	people := emoji.MakePeopleGroup()
-	el := emoji.EmojiList{[]emoji.Group{faces, people}}
+	sports := emoji.MakeSportGroup()
+	family := emoji.MakeFamilyGroup()
+	el := emoji.EmojiList{[]emoji.Group{faces, people, sports, family}}
 
 	selectGroup := promptui.Select{
 		Label: "Group (Faces are default)",
@@ -56,18 +58,38 @@ func main() {
 		em := el.Groups[groupNo].SubGroups[subGNo].Emojis[e]
 		emojis = append(emojis, " => "+em.Symbol+" : \""+strings.Join(em.Names, "\"")+"\"")
 	}
+	emojiChoice := el.Groups[groupNo].SubGroups[subGNo].Emojis
+
+	searcher := func(input string, index int) bool {
+		emoji := emojiChoice[index]
+		name := strings.Replace(strings.ToLower(emoji.Names[0]), " ", "", -1)
+		input = strings.Replace(strings.ToLower(input), " ", "", -1)
+
+		return strings.Contains(name, input)
+	}
+
+	templates := &promptui.SelectTemplates{
+		Label:    "{{ . }}?",
+		Active:   " => {{ .Names[0] | cyan }} ({{ .Symbol | red }})",
+		Inactive: "  {{ .Names[0] | cyan }} ({{ .Symbol | red }})",
+		Selected: "  => {{ .Names[0] | red | cyan }}",
+		Details: `
+--------- Choice ----------
+{{ "Name:" | faint }}	{{ .Names[0] }}
+{{ "Symbol:" | faint }}	{{ .Symbol }}`,
+	}
 
 	selectEmoji := promptui.Select{
-		Label: " Select \"" + strings.Join(el.Groups[groupNo].SubGroups[subGNo].SubGroupNames, "\" , \"") + "\" Emoji",
-		Items: emojis,
+		Label:     " Select \"" + strings.Join(el.Groups[groupNo].SubGroups[subGNo].SubGroupNames, "\" , \"") + "\" Emoji",
+		Items:     emojiChoice,
+		Templates: templates,
+		Searcher:  searcher,
+		Size:      4,
 	}
 
 	emojiNo, _, err := selectEmoji.Run()
 
 	clipboard.WriteAll(el.Groups[groupNo].SubGroups[subGNo].Emojis[emojiNo].Symbol)
 
-	fmt.Println(groupNo)
-	fmt.Println(subGNo)
-	fmt.Println(emojiNo)
-	fmt.Printf("You choose %q\n", el.Groups[groupNo].SubGroups[subGNo].Emojis[emojiNo].Symbol+" - Now copied to clipboard")
+	fmt.Printf("You choose %q\n", el.Groups[groupNo].SubGroups[subGNo].Emojis[emojiNo].Symbol+" - it has now been copied to clipboard")
 }

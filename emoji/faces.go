@@ -7,7 +7,7 @@ func MakeFaceGroup() Group {
 		GroupNames: []string{"face", "head", "faces", "heads"},
 		SubGroups: []subGroup{
 			subGroup{
-				Group:         "face",
+				Group:         "faces",
 				SubGroupNames: []string{"positive", "smile", "smiling"},
 				Emojis: []emoji{
 					emoji{Symbol: "😀 ", Names: []string{"grinning"}},
@@ -35,7 +35,7 @@ func MakeFaceGroup() Group {
 				},
 			},
 			subGroup{
-				Group:         "face",
+				Group:         "faces",
 				SubGroupNames: []string{"neutral"},
 				Emojis: []emoji{
 					emoji{Symbol: "🤔 ", Names: []string{"thinking"}},
@@ -68,7 +68,7 @@ func MakeFaceGroup() Group {
 				},
 			},
 			subGroup{
-				Group:         "face",
+				Group:         "faces",
 				SubGroupNames: []string{"negative"},
 				Emojis: []emoji{
 					emoji{Symbol: "☹️ ", Names: []string{"frowning"}},
@@ -98,7 +98,7 @@ func MakeFaceGroup() Group {
 			},
 			subGroup{
 				SubGroupNames: []string{"sick"},
-				Group:         "face",
+				Group:         "faces",
 				Emojis: []emoji{
 					emoji{Symbol: "😷 ", Names: []string{"medical mask"}},
 					emoji{Symbol: "🤒 ", Names: []string{"thermometer"}},
@@ -109,7 +109,7 @@ func MakeFaceGroup() Group {
 				},
 			},
 			subGroup{
-				Group:         "face",
+				Group:         "faces",
 				SubGroupNames: []string{"role"},
 				Emojis: []emoji{
 					emoji{Symbol: "😇 ", Names: []string{"smiling halo"}},
@@ -123,7 +123,7 @@ func MakeFaceGroup() Group {
 				},
 			},
 			subGroup{
-				Group:         "face",
+				Group:         "faces",
 				SubGroupNames: []string{"fantasy"},
 				Emojis: []emoji{
 					emoji{Symbol: "😈 ", Names: []string{"smiling horns"}},
@@ -142,7 +142,7 @@ func MakeFaceGroup() Group {
 			},
 			subGroup{
 				SubGroupNames: []string{"cat"},
-				Group:         "face",
+				Group:         "faces",
 				Emojis: []emoji{
 					emoji{Symbol: "😺 ", Names: []string{"grinning"}},
 					emoji{Symbol: "😸 ", Names: []string{"grinning smiling eyes"}},
@@ -156,7 +156,7 @@ func MakeFaceGroup() Group {
 				},
 			},
 			subGroup{
-				Group:         "face",
+				Group:         "faces",
 				SubGroupNames: []string{"monkey"},
 				Emojis: []emoji{
 					emoji{Symbol: "🙈 ", Names: []string{"see-no-evil", "see"}},
