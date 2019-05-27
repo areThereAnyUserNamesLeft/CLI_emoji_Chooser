@@ -9,7 +9,7 @@ Its golang so install with `go get github.co/areThereAnyUserNamesLeft/CLI_emoji_
 Then build with `go build -o emoji main.go`
 
 
-`chmod -x emoji`
+`chmod +x emoji`
 
 
 then move the emoji file to your bin.
