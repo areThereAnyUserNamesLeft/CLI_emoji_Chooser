@@ -1,0 +1,17 @@
+github.com/areThereAnyUserNamesLeft/CLi_emoji_Chooser v0.0.0-20180621152626-b27201f92763 h1:S+N/Agjok0EJSTlSuS1Bcfzdvi+QnOCYPw1K6zyEN3Y=
+github.com/areThereAnyUserNamesLeft/CLi_emoji_Chooser v0.0.0-20180621152626-b27201f92763/go.mod h1:794k8lT/leMYpigiNdf8u8EhR5eUy4gkXnHFDqJ9+/U=
+github.com/atotto/clipboard v0.1.0 h1:pw3q0vqdkRc2qob0PLEZo3NFSQehzW2dgSdbMI75kEs=
+github.com/atotto/clipboard v0.1.0/go.mod h1:ZY9tmq7sm5xIbd9bOK4onWV4S6X0u6GY7Vn0Yu86PYI=
+github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e h1:fY5BOSpyZCqRo5OhCuC+XN+r/bBCmeuuJtjz+bCNIf8=
+github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e/go.mod h1:nSuG5e5PlCu98SY8svDHJxuZscDgtXS6KTTbou5AhLI=
+github.com/juju/ansiterm v0.0.0-20180109212912-720a0952cc2a h1:FaWFmfWdAUKbSCtOU2QjDaorUexogfaMgbipgYATUMU=
+github.com/juju/ansiterm v0.0.0-20180109212912-720a0952cc2a/go.mod h1:UJSiEoRfvx3hP73CvoARgeLjaIOjybY9vj8PUPPFGeU=
+github.com/lunixbochs/vtclean v0.0.0-20170504063817-d14193dfc626 h1:33Ys8SnkRfz5ojdG853pyT/2Iqbk95PVm+QrC5XvI70=
+github.com/lunixbochs/vtclean v0.0.0-20170504063817-d14193dfc626/go.mod h1:pHhQNgMf3btfWnGBVipUOjRYhoOsdGqdm/+2c2E2WMI=
+github.com/manifoldco/promptui v0.3.0 h1:vJiVJREqDfn9ZhqTG1Dz5zP9RPWlAzWQkwRYLGyUHx4=
+github.com/manifoldco/promptui v0.3.0/go.mod h1:zoCNXiJnyM03LlBgTsWv8mq28s7aTC71UgKasqRJHww=
+github.com/mattn/go-colorable v0.1.0 h1:v2XXALHHh6zHfYTJ+cSkwtyffnaOyR1MXaA91mTrb8o=
+github.com/mattn/go-colorable v0.1.0/go.mod h1:9vuHe8Xs5qXnSaW/c/ABM9alt+Vo+STaOChaDxuIBZU=
+github.com/mattn/go-isatty v0.0.4 h1:bnP0vzxcAdeI1zdubAl5PjU6zsERjGZb7raWodagDYs=
+github.com/mattn/go-isatty v0.0.4/go.mod h1:M+lRXTBqGeGNdLjl/ufCoiOlB5xdOkqRJdNxMWT7Zi4=
+golang.org/x/sys v0.0.0-20180115085844-fff93fa7cd27/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
